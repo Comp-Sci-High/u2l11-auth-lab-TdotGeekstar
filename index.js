@@ -32,7 +32,7 @@ async function getRaccoonGif() {
   const response = await fetch(url)
   const data = await response.json()
   
-  console.log("GIF URL:", data.data.url)
+  console.log("GIF URL:", data.data[0].url)
 }
 
 
