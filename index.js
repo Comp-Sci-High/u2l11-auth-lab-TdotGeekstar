@@ -24,15 +24,15 @@ const query = `?api_key=${apiKey}&${endpoint}`
 // Define the function to fetch the data and console log the url key
 
 async function getRaccoonGif() {
-  const link = "https://api.giphy.com/v1/gifs/search";
-  const apiKey = "JXrN3XBIK6nCvc1msOBiWzNf2CGY2g94";
-  const query = `?api_key=${apiKey}&q=raccoon&limit=1`;
-  const url = link + query;
+  const link = "https://api.giphy.com/v1/gifs/search"
+  const apiKey = "JXrN3XBIK6nCvc1msOBiWzNf2CGY2g94"
+  const query = `?api_key=${apiKey}&q=raccoon&limit=1`
+  const url = link + query
 
-  const response = await fetch(url);
-  const data = await response.json();
+  const response = await fetch(url)
+  const data = await response.json()
   
-  console.log("GIF URL:", data.url);
+  console.log("GIF URL:", data.data.url)
 }
 
 
